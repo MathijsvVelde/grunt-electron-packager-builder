@@ -128,11 +128,11 @@ module.exports = (grunt) => {
         }
       },
       custom:{
-        options: (platform,arch) => {
+        options: function(platform,arch) {
           return {
-            platform,
-            arch,
-            icon : './app/recursos/icon'// Auto detect platform extension
+            platform  : platform,
+            arch      : arch,
+            icon      : './app/recursos/icon'// Auto detect platform extension
           }
         }
       }
